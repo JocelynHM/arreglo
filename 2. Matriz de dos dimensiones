@@ -3,9 +3,10 @@
 #include<stdlib.h>
 main()
 int mostrar(int y[ ][ ]);
-int r, co, c, ;
+int r, co, c, cPares, cImpares, res;
 {
   int x, y, z, pares[100], impares[100];
+  float prom;
   //un ciclo que se repita
   do
   {
@@ -28,18 +29,68 @@ int r, co, c, ;
       {
         for(co=0; co<y;co++)
         {
-        if (y[r][co]% 2)
+          if (y[r][co]% 2)
+          {
           scanf("%d", &pares[co]); //almacenar en un vector PARES
-        else
-           scanf("%d", &impares[co]);  //almacenar en un vector IMPARES
+          cPares= cPares+1;
+          }
+         else
+          {
+             scanf("%d", &impares[co]);  //almacenar en un vector IMPARES
+             cImpares= cImpares+1;
+           }
         }
        }
     //vector PARES numero mayor y posicion
     //promedio matriz y arreglos
-    
+    for(r=0; r<x; r++) suma de la matriz
+      {
+        for(co=0; co<y;co++)
+        {
+          sum= sum+y[r][co];
+        }
+      }
+      prom= (float)suMa/ (float)z; //z es el numero total de elementos de la matriz
+      printf("\El promedio de los numeros en la matriz es %f\n", prom);
+      suMa=0;
+      prom=0;
+      for(c=0; c<cPares, c++) //promedio del vector pares
+      {
+					sum= sum + pares[c];
+			}
+      prom= sum/cPares; 
+      prom= (float)suMa/ (float)z; //z es el numero total de elementos de la matriz
+      printf("\El promedio de los numeros en el vector pares es %f\n", prom);
+      suMa=0;
+      prom=0;
+      for(c=0; c<cImpares, c++) //promedio del vector impares
+      {
+					sum= sum + impares[c];
+			}
+      prom= sum/cImpares; 
+      printf("\nEl promedio de los numeros en el vector impares es %f\n", prom);
     //imprimir matriz y arreglos
-  
-  
+    printf("\nLos elementos de la matriz son: \n");
+      for(r=0; r<x; r++) //mostrar la matriz en forma de matriz
+      {
+        for(co=0; co<y;co++)
+        {
+          printf("%d \t" &y[r][co]);
+        }
+      }
+      printf("\nLos elementos del vector pares son: \n");
+      for (n=0; n<x; n++) // mostrar vector pares
+			{
+				printf("%d /n"; pares[n]);
+			}
+      printf("\nLos elementos del vector impares son: \n");
+      for (n=0; n<x; n++) // mostrar vector impares
+			{
+				printf("%d /n"; pares[n]);
+			}
+      
+  printf("\n\n¿Deseas regresar al menu?\n\nSI:presiona 1\n\nNO: presiona 2\n");
+	scanf("%d", &res);
   }
   while(res==1);
 
