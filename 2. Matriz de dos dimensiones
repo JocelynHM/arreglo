@@ -1,0 +1,47 @@
+//leer una matriz 
+#include<stdio.h>
+#include<stdlib.h>
+main()
+int mostrar(int y[ ][ ]);
+int r, co, c, ;
+{
+  int x, y, z, pares[100], impares[100];
+  //un ciclo que se repita
+  do
+  {
+    printf("\nEste programa lee una matriz de la cantidad de elementos que tu decidas (no mas de 100 en total[nxm<100], hace un vector con los numeros pares, impares y te dice la posicion del mayor, obtiene el promedio y finalmente, imprime la matriz y los vectores\n");
+    printf("\nPor favor, ingresa el numeros de renglones que tendra la matriz\");
+    scanf("%d", &x);
+    printf("\nAhora, ingresa el numeros de columnas\n");
+    scanf("%d", &y);
+    z=x*y;
+    printf("\nIngresa %d numeros para la matriz\n", z); 
+    for(r=0; r<x; r++)
+      {
+        for(co=0; co<y;co++)
+        {
+          scanf("%d" &y[r][co]);
+        }
+      }
+    
+    for(r=0; r<x; r++)
+      {
+        for(co=0; co<y;co++)
+        {
+        if (y[r][co]% 2)
+          scanf("%d", &pares[co]); //almacenar en un vector PARES
+        else
+           scanf("%d", &impares[co]);  //almacenar en un vector IMPARES
+        }
+       }
+    //vector PARES numero mayor y posicion
+    //promedio matriz y arreglos
+    
+    //imprimir matriz y arreglos
+  
+  
+  }
+  while(res==1);
+
+  return 0;
+  }
